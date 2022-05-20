@@ -19,15 +19,22 @@ namespace StudentInfoSystem
     /// </summary>
     public partial class LoginWindow : Window
     {
-        private LoginCommand _loginCommand = new LoginCommand();
-        public LoginCommand LoginCommand
+        public LoginCommand LoginCommander
         {
-            get { return _loginCommand; }
+            get; set;
         }
         public LoginWindow()
         {
             InitializeComponent();
             this.DataContext = this;
+        }
+
+
+        private void loginBtn_Click(object sender, RoutedEventArgs e)
+        {
+            LoginCommander = new LoginCommand();
+            LoginCommander.username = usernameBox.Text;
+            LoginCommander.password = passwordBox.Text;
         }
     }
 }

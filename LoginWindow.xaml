@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="LoginWindow" Height="300" Width="300">
     <Grid>
-        <TextBox x:Name="passwordBox" Margin="10,124,10,142"></TextBox>
-        <TextBox x:Name="usernameBox" Margin="10,64,10,202"></TextBox>
-        <Label Content="Username" HorizontalAlignment="Left" Height="30" Margin="10,29,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label Content="Password" HorizontalAlignment="Left" Height="30" Margin="10,87,0,0" VerticalAlignment="Top" Width="80"/>
-        <Button Command="{Binding LoginCommand}" CommandParameter="{Binding .}" x:Name="loginBtn" Content="Button" Margin="0,244,0,19"/>
+        <TextBox x:Name="passwordBox" Margin="10,114,10,119"></TextBox>
+        <TextBox x:Name="usernameBox" Margin="10,40,10,192"></TextBox>
+        <Label Content="Username" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="30" Margin="10,92,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="loginBtn" Content="Login" HorizontalAlignment="Center" Margin="0,225,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.545,0.297" Width="111" Command="{Binding LoginBtnCommand}"/>
     </Grid>
 </Window>
