@@ -2,7 +2,7 @@
 
 namespace UserLogin
 {
-    class UserLogin
+    public class UserLoginClass
     {
         public delegate void ErrorHandling(string message);
         public static void Main(string[] Args)
